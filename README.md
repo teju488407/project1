@@ -8,7 +8,7 @@ Launching kubernetes cluster using Terraform.
 2. Create a repository
 3. Create a working directory of you machine/VM. `mkdir project` --> `cd project`
 4. In that particular directory run `git init`
-5. Create the required files.
+5. Create the required files in the directrory.
     `git add <filename>`
     `git commit -m "commit_message"`
 6. Setting remote url or origin
@@ -20,5 +20,5 @@ Launching kubernetes cluster using Terraform.
 7. Add SSH public key in github. Goto settings --> SSH and GPG keys --> add the public key --> save (It will prompt for password)
 8. Verify the SSH connection using `ssh -T git@github.com`
 9. Push the changes to git `git push -u origin <branch_name>`
- 
+
     
