@@ -5,6 +5,8 @@ provider "google" {
   //org_id     = "1052607630679"
 }
 
+# provider "aws" {}
+
 # terraform {
 # backend "gcs" {
 #     bucket      = "terraforming-state"

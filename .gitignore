@@ -1,0 +1,6 @@
+creds.json
+.autogit
+.terraform
+terraform.tfstate
+*.tfstate*
+terraform.tfvars
