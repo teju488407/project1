@@ -17,7 +17,7 @@ Launching kubernetes cluster using Terraform.
    The above commands is used to add a new remote  
    `git remote set-url origin git@github.com:User/reponame.git` - to change the url of an existing remote repository  
    **Reference URL** : https://help.github.com/en/articles/about-ssh
-7. Add SSH public key in github. Goto `**settings**` --> **SSH and GPG keys** --> add the _public key_ --> **save** (It will prompt for password)
+7. Add SSH public key in github. Goto **`settings`** --> **SSH and GPG keys** --> add the _public key_ --> **save** (It will prompt for password)
 8. Verify the SSH connection using the command `ssh -T git@github.com`
 9. Push the changes to git `git push -u origin <branch_name>`
 
