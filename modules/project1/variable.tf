@@ -3,7 +3,7 @@ variable "sub-names" {
 }
 
 variable "subnet_cidr" {
-  default = ["10.7.0.0/16", "10.7.0.0/16"]
+  default = ["10.7.0.0/16", "10.8.0.0/16"]
 }
 
 variable "subnet_region" {
