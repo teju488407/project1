@@ -1,4 +1,4 @@
-# Project-1 sk
+# Project-1
 
 Launching kubernetes cluster using Terraform.
 
