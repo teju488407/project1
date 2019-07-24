@@ -6,7 +6,7 @@ resource "google_container_cluster" "primary" {
   network = "${google_compute_network.vpc.name}"
 }
 
-resource "google_container_node_pool" "primary_preemptible_nodes" {
+resource "google_container_node_pool" "my-pool" {
   name       = "pro1-node-pool"
   location   = "us-central1"
   cluster    = "${google_container_cluster.primary.name}"
