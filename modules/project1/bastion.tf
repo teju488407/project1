@@ -11,15 +11,9 @@ resource "google_compute_instance" "default" {
   }
   network_interface {
     network = "${google_compute_network.vpc.name}"
-
     access_config {
       // Ephemeral IP
     }
   }
-
-  metadata = {
-    foo = "bar"
-  }
-
-  metadata_startup_script = "echo hi > /test.txt"
+  metadata_startup_script = "sudo yum install -y git && sudo yum install -y ansible"
 }
