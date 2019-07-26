@@ -6,7 +6,6 @@ provider "google" {
 }
 
 # provider "aws" {}
-
 # terraform {
 # backend "gcs" {
 #     bucket      = "terraforming-state"
