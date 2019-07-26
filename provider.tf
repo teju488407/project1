@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = "creds.json"
+  credentials = credentials('terraform-auth')//"creds.json"
   project     = "${var.project-id}"
   region      = "${var.region}"
   //org_id     = "1052607630679"
