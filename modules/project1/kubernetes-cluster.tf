@@ -8,6 +8,10 @@ resource "google_container_cluster" "primary" {
   network_policy { 
       enabled = true
   }
+  private_cluster_config{
+    enable_private_nodes = true
+    enable_private_endpoint = true
+  }
 }
 
 resource "google_container_node_pool" "my-pool" {
