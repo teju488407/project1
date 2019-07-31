@@ -18,5 +18,6 @@ resource "google_container_node_pool" "my-pool" {
       "https://www.googleapis.com/auth/logging.write",
       "https://www.googleapis.com/auth/monitoring",
     ]
+    tags = ["project1"]
   }
 }

@@ -18,7 +18,6 @@ resource "google_compute_subnetwork" "subnet" {
 resource "google_compute_firewall" "firewall" {
     name        = "firewall-pro1"
     network     = "${google_compute_network.vpc.name}"
-
     allow {
         protocol = "icmp"
     }
@@ -26,6 +25,6 @@ resource "google_compute_firewall" "firewall" {
         protocol = "tcp"
         ports    = ["22"]
     }
-
-    source_ranges = ["35.239.140.117/32"]
+    source_tags = ["bastion-ssh"]
+    target_tags = ["project1"]
 }
