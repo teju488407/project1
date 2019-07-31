@@ -5,6 +5,11 @@ resource "google_container_cluster" "primary" {
   initial_node_count = 1
   network = "${google_compute_network.vpc.name}"
   subnetwork = "subnet-pro1b"
+  addons_config {
+    network_policy_config { 
+      enabled = true
+    }
+  }
 }
 
 resource "google_container_node_pool" "my-pool" {
