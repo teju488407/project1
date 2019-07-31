@@ -1,7 +1,7 @@
 resource "google_compute_instance" "default" {
   name         = "bastion-pro1"
   machine_type = "n1-standard-1"
-  zone         = "us-central1-f"
+  zone         = "us-east1-b"
 
   tags = ["bastion-ssh"]
   boot_disk {
@@ -11,6 +11,7 @@ resource "google_compute_instance" "default" {
   }
   network_interface {
     network = "${google_compute_network.vpc.name}"
+    subnetwork="subnet-pro1a"
     access_config {
       // Ephemeral IP
     }

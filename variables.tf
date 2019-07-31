@@ -4,5 +4,5 @@ variable "region" {
 
 variable "project-id" {
   description = "unique project id"
-  default = "hypnotic-beaker-219120"
+  default = "vicky-226807"
 }
