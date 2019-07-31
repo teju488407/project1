@@ -12,6 +12,11 @@ resource "google_container_cluster" "primary" {
     enable_private_nodes = true
     enable_private_endpoint = true
   }
+  ip_allocation_policy{
+  }
+  master_authorized_networks_config {
+    cidr_blocks = []
+  }
 }
 
 resource "google_container_node_pool" "my-pool" {
