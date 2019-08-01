@@ -31,7 +31,6 @@ resource "google_container_node_pool" "my-pool" {
   location   = "us-central1"
   cluster    = "${google_container_cluster.primary.name}"
   node_count = 1
-  initial_node_count = 1
 
   autoscaling {
     min_node_count = "1"
