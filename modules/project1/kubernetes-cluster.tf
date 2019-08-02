@@ -5,11 +5,9 @@ resource "google_container_cluster" "primary" {
   initial_node_count = 1
   network = "${google_compute_network.vpc.name}"
   # subnetwork = "subnet-pro1b"
-  network_policy { 
-      enabled = true
-  }
-  node_pool{
-    name = ${google_container_node_pool.my-pool.name}
+
+  node_pool {
+    name = "pro1-node-pool"
   }
   private_cluster_config{
     enable_private_nodes = true
