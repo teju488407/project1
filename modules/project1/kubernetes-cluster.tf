@@ -5,6 +5,7 @@ resource "google_container_cluster" "primary" {
   initial_node_count = 1
   network = "${google_compute_network.vpc.name}"
   # subnetwork = "subnet-pro1b"
+  subnetwork = "${google_compute_subnetwork.subnet.1.name}"
 
   node_pool {
     name = "pro1-node-pool"
