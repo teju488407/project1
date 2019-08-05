@@ -12,6 +12,7 @@ resource "google_compute_instance" "default" {
   network_interface {
     network = "${google_compute_network.vpc.name}"
     # subnetwork="subnet-pro1a"
+    subnetwork = "${element(google_compute_subnetwork.subnet.*.self_link,0)}"
     access_config {
       // Ephemeral IP
     }
